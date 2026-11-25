@@ -57,6 +57,7 @@
   const events = {
     defence: {
       key: "defence",
+      googleUrl: D.calendarUrl || "",
       title: `PhD defence – ${P.name}`,
       start: dStart, end: dEnd,
       location: [D.room, D.building, D.address].filter(Boolean).join(", "),
@@ -106,7 +107,7 @@
   }
   const calLinks = (ev) =>
     `<p class="cal">Add to calendar:
-      <a href="${esc(gcalUrl(ev))}" target="_blank" rel="noopener">Google</a> ·
+      <a href="${esc(ev.googleUrl || gcalUrl(ev))}" target="_blank" rel="noopener">Google</a> ·
       <a href="#" data-ics="${ev.key}">Apple / Outlook</a></p>`;
   const mapsLink = (q) => `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(q)}`;
   const row = (label, value) => (value ? `<tr><th>${label}</th><td>${value}</td></tr>` : "");

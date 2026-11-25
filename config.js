@@ -54,6 +54,8 @@ window.DEFENCE = {
     building: "Main Building", // TODO
     address: "1 University Road, City, Postcode", // TODO  (used for the map)
     mapQuery: "", // optional: override what's searched on the map, e.g. "Main Building, University of X"
+    // Your Google Calendar invite link — used for the "Add to calendar: Google" link
+    calendarUrl: "https://calendar.app.google/dwv2MtcWn7kL8Fh19",
     // (HTML ok) Shown in "Getting there"
     directions: {
       entrance:
