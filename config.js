@@ -70,7 +70,7 @@ window.DEFENCE = {
   rsvp: {
     // The LONG Google Form link (…/viewform), not the forms.gle short link
     googleFormUrl: "https://docs.google.com/forms/d/e/1FAIpQLSd8Kni-pc8vPkOO5w2pzPtVc2wGYUKRdERdgI-R0JPuBHs-Kg/viewform",
-    deadline: "2026-12-10", // TODO  last day to register (YYYY-MM-DD) — check with security how much notice they need
+    deadline: "", // optional: last day to register (YYYY-MM-DD); leave "" to show no date
     formHeight: 1100, // pixels; increase if the embedded form shows its own scrollbar
   },
 
