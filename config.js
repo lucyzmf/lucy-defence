@@ -24,20 +24,32 @@ window.DEFENCE = {
   },
 
   thesis: {
-    title: "Decoding communication from brain recordings: building the next generation of brain computer interfaces", // TODO
-    // (HTML ok) A short, friendly summary works better than the formal abstract.
+    title: "Decoding communication from brain recordings: building the next generation of brain computer interfaces",
+    // (HTML ok) A short, friendly summary for family and friends.
+    abstract:
+      "Saying or typing even a short sentence means the brain has to turn an idea into a precisely ordered sequence of movements. " +
+      "In this thesis I recorded brain activity while people typed and spoke, to see how the brain does this. " +
+      "It turns out the brain holds the sentence, the words, the syllables and the individual sounds all at once, " +
+      "and keeps the upcoming pieces in order by constantly changing how each one is encoded. " +
+      "I then combined these insights with AI models trained on large amounts of brain data to decode typed sentences " +
+      "from non-invasive brain recordings, and to improve speech decoding from electrodes inside the brain. " +
+      "The long-term goal: brain–computer interfaces that give people who have lost the ability to speak, for example through ALS, their voice back.",
     pdfUrl: "", // optional link to the thesis PDF / repository record
-    supervisors: ["", "Dr. Firstname Lastname"], // TODO
+    supervisors: [
+      "Pierre Bourdillon (thesis director) – Hospital Foundation Adolphe de Rothschild, Université Paris Cité",
+      "Jean-Rémi King (co-director) – Meta AI",
+    ],
     committee: [
-      "Prof. Firstname Lastname (Chair)", // TODO
-      "Prof. Firstname Lastname",
-      "Dr. Firstname Lastname (External examiner)",
+      "Henri Lorach (reviewer) – University of Lausanne",
+      "Leila Wehbe (reviewer) – Stanford University",
+      "Sylvain Chevallier (examiner) – Université Paris-Saclay / Inria",
+      "Alex Cayco Gajic (ENS representative) – École normale supérieure",
     ],
   },
 
   defence: {
-    start: "2027-01-20T14:00", // TODO  YYYY-MM-DDTHH:MM, venue local time
-    end: "2027-01-20T16:30", // TODO
+    start: "2026-12-17T14:00", // TODO check the start time  (YYYY-MM-DDTHH:MM, Paris time)
+    end: "2026-12-17T16:30", // TODO check the end time
     room: "Lecture Theatre 1.23", // TODO
     building: "Main Building", // TODO
     address: "1 University Road, City, Postcode", // TODO  (used for the map)
@@ -62,8 +74,8 @@ window.DEFENCE = {
   celebration: {
     show: true,
     title: "Post-defence celebration",
-    start: "2027-01-20T18:00", // TODO
-    end: "2027-01-20T22:00", // TODO
+    start: "2026-12-17T18:00", // TODO
+    end: "2026-12-17T22:00", // TODO
     venue: "The Name of the Pub / Café", // TODO
     address: "12 Example Street, City", // TODO  (leave "" to keep it private — share it in the form confirmation instead)
     // (HTML ok)
@@ -76,7 +88,7 @@ window.DEFENCE = {
     // Paste the LONG Google Form link (Send → link icon → untick "Shorten URL").
     // It looks like https://docs.google.com/forms/d/e/XXXXXXXX/viewform
     googleFormUrl: "", // TODO
-    deadline: "2027-01-13", // TODO  last day to register (YYYY-MM-DD) — check with security how much notice they need
+    deadline: "2026-12-10", // TODO  last day to register (YYYY-MM-DD) — check with security how much notice they need
     formHeight: 1500, // pixels; increase if the embedded form shows its own scrollbar
   },
 
