@@ -41,6 +41,11 @@ window.DEFENCE = {
     mapQuery: "École normale supérieure, 45 rue d'Ulm, 75005 Paris",
     // Your Google Calendar invite link — used for the "Add to calendar: Google" link
     calendarUrl: "https://calendar.app.google/dwv2MtcWn7kL8Fh19",
+    // (HTML ok) "Finding the room" text, shown above the map
+    findRoom:
+      "Check in at the reception (<em>Loge</em>, no. 1 on the map) at 45 rue d'Ulm with your photo ID. " +
+      "Then take <strong>staircase A</strong> up to the <strong>1st floor</strong>: the Salle des Actes is the room on your right.",
+    mapImage: "assets/ens-map.png",
     online: {
       show: true,
       // Tip: leave url empty and put the link in the Google Form confirmation message instead,

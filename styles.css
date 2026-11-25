@@ -55,6 +55,9 @@ tr:last-child th, tr:last-child td { border-bottom: 0; }
 
 .cal { font-size: .95rem; }
 
+h3 { font-size: 1.05rem; margin: 24px 0 8px; }
+.map-img { display: block; width: 100%; height: auto; border: 1px solid var(--line); border-radius: 6px; }
+
 .button {
   display: inline-block;
   background: var(--accent);

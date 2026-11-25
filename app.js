@@ -136,6 +136,11 @@
           ? row("Online", D.online.url ? `<a href="${esc(D.online.url)}" target="_blank" rel="noopener">Livestream link</a>` : esc(D.online.note || ""))
           : ""}
       </table>
+      ${D.findRoom || D.mapImage ? `
+        <h3>Finding the room</h3>
+        ${D.findRoom ? `<p>${D.findRoom}</p>` : ""}
+        ${D.mapImage ? `<a href="${esc(D.mapImage)}" target="_blank" rel="noopener"><img class="map-img" src="${esc(D.mapImage)}" alt="Map of 45 rue d'Ulm with the Salle des Actes (no. 15, next to staircase A) circled in red" loading="lazy"></a>
+          <p class="small muted">Salle des Actes circled in red (no. 15). Tap the map to enlarge.</p>` : ""}` : ""}
       ${calLinks(events.defence)}
       <p><a class="button" href="#register">Register to attend</a></p>
     </section>`;
