@@ -221,7 +221,7 @@
     ? `<footer><p>${esc(contact.note || "Questions?")} <a href="mailto:${esc(contact.email)}">${esc(contact.email)}</a></p></footer>`
     : "";
 
-  app.innerHTML = `<main>${header}${defence}${celebration}${schedule}${register}${directions}${thesis}${faq}${footer}</main>`;
+  app.innerHTML = `<main>${header}${defence}${thesis}${celebration}${schedule}${register}${directions}${faq}${footer}</main>`;
   document.title = `${P.name} · ${P.degree || "PhD"} Defence`;
 
   /* ---------- countdown ---------- */
