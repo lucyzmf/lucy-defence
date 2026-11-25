@@ -48,21 +48,21 @@ window.DEFENCE = {
   },
 
   defence: {
-    start: "2026-12-17T14:00", // TODO check the start time  (YYYY-MM-DDTHH:MM, Paris time)
-    end: "2026-12-17T16:30", // TODO check the end time
-    room: "Lecture Theatre 1.23", // TODO
-    building: "Main Building", // TODO
-    address: "1 University Road, City, Postcode", // TODO  (used for the map)
-    mapQuery: "", // optional: override what's searched on the map, e.g. "Main Building, University of X"
+    start: "2026-12-17T16:00", // YYYY-MM-DDTHH:MM, Paris time
+    end: "2026-12-17T18:00",
+    room: "Salle des Actes",
+    building: "École normale supérieure (ENS-PSL)",
+    address: "45 rue d'Ulm, 75005 Paris",
+    mapQuery: "École normale supérieure, 45 rue d'Ulm, 75005 Paris",
     // Your Google Calendar invite link — used for the "Add to calendar: Google" link
     calendarUrl: "https://calendar.app.google/dwv2MtcWn7kL8Fh19",
     // (HTML ok) Shown in "Getting there"
     directions: {
       entrance:
-        "Use the main entrance and check in at the security desk — they'll have the guest list. Please bring photo ID.",
-      transit: "TODO: e.g. Bus 12 or 15 to University Square, then a 3-minute walk.",
-      parking: "TODO: e.g. Paid visitor parking at Car Park B (entrance on X Street).",
-      accessibility: "TODO: e.g. Step-free access via the side entrance; lift to the 1st floor.",
+        "Come to the main entrance at 45 rue d'Ulm and give your name at the reception desk — they'll have the guest list. Please bring photo ID.",
+      transit: "RER B: Luxembourg (about 8 minutes' walk). Metro line 7: Place Monge (about 10 minutes' walk).",
+      parking: "There's no visitor parking at the ENS — public transport is easiest.",
+      accessibility: "", // TODO add step-free access info if you know it (leave "" to hide this row)
     },
     online: {
       show: true,
@@ -76,7 +76,7 @@ window.DEFENCE = {
   celebration: {
     show: true,
     title: "Post-defence celebration",
-    start: "2026-12-17T18:00", // TODO
+    start: "2026-12-17T18:30", // TODO set when the venue is booked
     end: "2026-12-17T22:00", // TODO
     venue: "The Name of the Pub / Café", // TODO
     address: "12 Example Street, City", // TODO  (leave "" to keep it private — share it in the form confirmation instead)
@@ -96,12 +96,12 @@ window.DEFENCE = {
 
   // Rough plan of the day. Times are plain text, shown as written.
   schedule: [
-    { time: "13:45", title: "Doors open", text: "Check in at the security desk with photo ID and find a seat." },
-    { time: "14:00", title: "Public presentation", text: "A ~30-minute overview of the research, aimed at a general audience." },
-    { time: "14:30", title: "Questions from the committee", text: "The examiners question the candidate. The audience listens." },
-    { time: "≈16:00", title: "Committee deliberates", text: "The committee leaves to decide; everyone waits outside." },
-    { time: "≈16:30", title: "Verdict & congratulations", text: "The result is announced — then photos, hugs and flowers." },
-    { time: "18:00", title: "Celebration", text: "Drinks at the celebration venue (see below)." },
+    { time: "15:45", title: "Doors open", text: "Check in at the reception desk with photo ID and find a seat in the Salle des Actes." },
+    { time: "16:00", title: "Public presentation", text: "An overview of the research, aimed at a general audience." },
+    { time: "≈16:45", title: "Questions from the jury", text: "The jury questions the candidate. The audience listens." },
+    { time: "≈17:40", title: "Jury deliberates", text: "The jury leaves to decide; everyone waits outside." },
+    { time: "≈18:00", title: "Verdict & congratulations", text: "The result is announced — then photos, hugs and flowers." },
+    { time: "18:30", title: "Celebration", text: "Drinks at the celebration venue (see below)." },
   ],
 
   // (HTML ok in answers)
@@ -124,7 +124,7 @@ window.DEFENCE = {
     },
     {
       q: "Can I arrive late or leave early?",
-      a: "Please try to be seated by 14:00. If you're late, wait for a pause and enter quietly at the back.",
+      a: "Please try to be seated by 16:00. If you're late, wait for a pause and enter quietly at the back.",
     },
     {
       q: "Can I take photos?",
