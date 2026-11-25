@@ -145,7 +145,7 @@
       <h2>${esc(CEL.title || "Celebration")}</h2>
       <table class="info">
         ${row("Date", fmtDate(events.celebration.start))}
-        ${row("Time", `${fmtTime(events.celebration.start)} – ${fmtTime(events.celebration.end)}`)}
+        ${row("Time", CEL.end ? `${fmtTime(events.celebration.start)} – ${fmtTime(events.celebration.end)}` : `From ${fmtTime(events.celebration.start)}`)}
         ${row("Where", esc(CEL.venue || ""))}
         ${row("Address", CEL.address ? `${esc(CEL.address)} · <a href="${esc(mapsLink([CEL.venue, CEL.address].filter(Boolean).join(", ")))}" target="_blank" rel="noopener">Map</a>` : "")}
       </table>

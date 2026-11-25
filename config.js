@@ -53,14 +53,13 @@ window.DEFENCE = {
   celebration: {
     show: true,
     title: "Post-defence celebration",
-    start: "2026-12-17T18:30", // TODO set when the venue is booked
-    end: "2026-12-17T22:00", // TODO
-    venue: "The Name of the Pub / Café", // TODO
-    address: "12 Example Street, City", // TODO  (leave "" to keep it private — share it in the form confirmation instead)
+    start: "2026-12-17T19:30",
+    end: "", // optional, e.g. "2026-12-17T23:00" — leave "" to just show "from 19:30"
+    venue: "Ground Control",
+    address: "81 rue du Charolais, 75012 Paris",
     // (HTML ok)
     details:
-      "Drinks and snacks — come for one or stay all evening. Partners, friends and family are all very welcome. " +
-      "TODO: mention if there's food, a tab, or if people should bring anything.",
+      "Drinks and food near Gare de Lyon — come for one or stay all evening. Partners, friends and family are all very welcome.",
   },
 
   rsvp: {
