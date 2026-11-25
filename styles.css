@@ -1,0 +1,80 @@
+/* Simple, readable, works on phones and laptops. Change --accent to change the link/button colour. */
+:root {
+  --text: #222;
+  --muted: #666;
+  --line: #e5e5e5;
+  --accent: #1a5fb4;
+  --notice: #fff8e1;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  background: #fff;
+  color: var(--text);
+  font: 17px/1.6 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  -webkit-text-size-adjust: 100%;
+}
+
+main {
+  max-width: 680px;
+  margin: 0 auto;
+  padding: 40px 16px 64px;
+}
+
+a { color: var(--accent); }
+
+h1 { font-size: 2rem; line-height: 1.2; margin: 0 0 8px; }
+h2 { font-size: 1.3rem; margin: 0 0 16px; }
+
+header { padding-bottom: 24px; border-bottom: 1px solid var(--line); }
+.kicker { margin: 0 0 4px; color: var(--muted); font-size: .9rem; text-transform: uppercase; letter-spacing: .05em; }
+.title { margin: 0 0 12px; font-size: 1.1rem; color: var(--muted); font-style: italic; }
+.countdown { margin: 0; font-weight: 600; }
+
+section { padding: 32px 0; border-bottom: 1px solid var(--line); }
+
+.muted { color: var(--muted); }
+.small { font-size: .9rem; }
+
+/* Label / value tables */
+table { width: 100%; border-collapse: collapse; margin-bottom: 16px; }
+th, td { text-align: left; vertical-align: top; padding: 8px 0; border-bottom: 1px solid var(--line); }
+th { width: 120px; padding-right: 16px; font-weight: 600; white-space: nowrap; }
+tr:last-child th, tr:last-child td { border-bottom: 0; }
+.schedule th { width: 80px; font-variant-numeric: tabular-nums; }
+
+/* On narrow phones, stack label above value */
+@media (max-width: 480px) {
+  .info th, .info td { display: block; width: auto; border: 0; padding: 0; }
+  .info th { padding-top: 10px; color: var(--muted); font-size: .85rem; font-weight: 500; }
+  .info td { padding-bottom: 10px; border-bottom: 1px solid var(--line); }
+  .info tr:last-child td { border-bottom: 0; }
+}
+
+.cal { font-size: .95rem; }
+
+.button {
+  display: inline-block;
+  background: var(--accent);
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+  padding: 12px 22px;
+  border-radius: 6px;
+}
+.button:hover { opacity: .9; }
+
+.notice { background: var(--notice); border-radius: 6px; padding: 16px 18px; margin-bottom: 20px; }
+.notice p { margin: 0 0 8px; }
+.notice ul { margin: 0; padding-left: 20px; }
+
+iframe.form { display: block; width: 100%; border: 1px solid var(--line); border-radius: 6px; }
+
+details { border-bottom: 1px solid var(--line); padding: 12px 0; }
+details:last-child { border-bottom: 0; }
+summary { cursor: pointer; font-weight: 600; }
+details p { margin: 8px 0 0; color: var(--muted); }
+
+footer { padding-top: 32px; text-align: center; color: var(--muted); }
